@@ -11,6 +11,6 @@ class Bomb
     bomb.width = 30
     bomb.height = 40
 
-    puts bomb
+    bomb
   end
 end

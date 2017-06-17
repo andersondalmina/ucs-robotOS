@@ -1,8 +1,6 @@
 require 'ruby2d'
 require 'ffi'
 
-set diagnostics: true
-
 module Driver
   extend FFI::Library
 
@@ -22,13 +20,13 @@ Triangle.new(x1: 100, y1: 185, x2: 70, y2: 140, x3: 130, y3: 140, color: 'red')
 on :key do |event|
   case event.key
   when 'up'
-    Driver.writeDriver('up')
+    Driver.writeDriver('u')
   when 'down'
-    Driver.writeDriver('down')
+    Driver.writeDriver('d')
   when 'left'
-    Driver.writeDriver('left')
+    Driver.writeDriver('l')
   when 'right'
-    Driver.writeDriver('right')
+    Driver.writeDriver('r')
   end
 end
 
